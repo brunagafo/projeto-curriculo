@@ -157,7 +157,6 @@ main .novasessao {
     padding: 15px;
     font-size: 18px;
     text-align: justify;
-    columns: 2;
 }
 
 #trajetoria h1 {
@@ -184,13 +183,12 @@ main .novasessao {
 /*PÁGINA 3*/
 #habilidades h1 {
     background-image: linear-gradient(to right, rgba(146, 207, 207, 0.778), transparent);
-    display: block;
-    font-family: var(--fonte-pixel);
-    text-align: center;
     padding: 20px;
-    margin: 0px 0px 20px 0px;
+    margin: -20px -20px 0px -20px;
+    font-family: var(--fonte-pixel);
+    font-size: 26px;
+    text-align: center;
 }
-
 #habilidades h2 {
     display: inline-block;
     padding: 10px;
@@ -213,8 +211,7 @@ main .novasessao {
 
 #softskills {
     display: inline-block;
-    width: 300px;
-    height: 150px;
+    max-width: 300px;
     border: 2px solid;
     border-radius: 10px 10px 0px 0px;
     margin: 10px;
@@ -233,8 +230,7 @@ main .novasessao {
 
 #andamento {
     display: inline-block;
-    width: 300px;
-    height: 150px;
+    max-width: 300px;
     border: 2px solid;
     border-radius: 10px 10px 0px 0px;
     margin: 10px;
@@ -262,7 +258,7 @@ main .novasessao {
 
 #curiosidade {
     display: inline-block;
-    max-width: 600px;
+    max-width: 400px;
     margin: 40px;
     padding: 30px;
     border-radius: 0px 20px 0px 40px;
