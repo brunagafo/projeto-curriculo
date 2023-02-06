@@ -259,7 +259,7 @@ main .novasessao {
 #curiosidade {
     display: inline-block;
     padding: 30px;
-    margin: auto;
+    margin: 20px 0px 20px 0px;
     border-radius: 0px 20px 0px 40px;
     outline: 2px solid black;
     box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.551);
@@ -276,7 +276,7 @@ main .novasessao {
 }
 
 #curiosidade h2 {
-    padding: 20px;
+    padding: 15px;
     font-size: 18px;
 }
 
