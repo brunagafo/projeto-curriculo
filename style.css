@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Pixel;
+    src: url(Fontes/Pokemon_GB.ttf);
+}
+
+/*VARIÁVEIS*/
+:root {
+    --fonte-padrão: 'Courier New', Courier, monospace;
+    --fonte-pixel: 'Pixel','Courier New', Courier, monospace;
+    --verde0: rgba(146, 207, 207, 0.219);
+    --verde1: rgba(146, 207, 207, 0.778);
+    --cinza0: rgba(128, 128, 128, 0.147);
+    --cinza1: rgba(128, 128, 128, 0.582);
+    --cinza2: rgba(128, 128, 128);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*CORPO*/
+body {
+    font-family: var(--fonte-padrão);
+    background-color: white;
+    /* For browsers that do not support gradients */
+}
+
+/* MENU DE NAVEGAÇÃO*/
+nav {
+    min-height: 50px;
+    padding: 20px 20px 5px 20px;
+    border-bottom: 1px solid var(--cinza2);
+}
+
+nav>a {
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: medium;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+nav>a::before {
+    content: '\007C\00A0\00A0';
+}
+
+nav>a:hover {
+    /*problema em tela pequena -> overflow*/
+    font-weight: bold;
+    background-color: var(--verde0);
+    border-radius: 4px;
+}
+
+/*CABEÇALHO/ PÁGINA 1*/
+header {
+    min-height: 700px;
+    margin: auto;
+    padding: 0px;
+    border: none;
+    background-image: linear-gradient(to right, rgba(128, 128, 128, 0.582), transparent);
+}
+
+#intro {
+    display: inline-block;
+    background-color: rgba(146, 207, 207, 0.778);
+    max-width: 500px;
+    max-height: 500px;
+    margin: 20px 50px 50px 50px;
+    padding:30px;
+    border-radius: 10px;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+#avatar {
+    display: inline-block;
+    margin: 30px 100px 30px 100px;
+    max-width: 350px;
+    text-align: right;
+}
+
+#avatar img {
+    width: 100%;
+}
+
+/*PRINCIPAL*/
+main {
+    max-width: 1300px;
+    min-width: 280px;
+    /*menores resoluções de smartphones + margem presumida*/
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+main img {
+    width: 100%;
+}
+
+main .novasessao {
+    width: auto;
+    margin: 30px;
+    padding: 20px;
+    border: 2px solid black;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.linkexterno {
+    padding: 2px;
+    text-decoration: none;
+    background-color: var(--verde0);
+    color: black;
+    border-radius: 20px;
+}
+.linkexterno:hover {
+    font-weight: bold;
+}
+
+/*PÁGINA 2*/
+#sobremim {
+    display: block;
+    padding: 10px;
+    border: 20px solid;
+    border-image-source: url(Imagens/borda.png);
+    border-image-slice: 97;
+    font-weight: bold;
+}
+
+#sobremim h1 {
+    background-color: rgba(146, 207, 207, 0.778);
+    padding: 15px;
+    border-radius: 5px 5px 0px 0px;
+    margin: -15px -16px 0px -15px;
+    font-family: var(--fonte-pixel);
+    font-size: 22px;
+    text-align: center;
+}
+
+#sobremim ul {
+    padding: 10px;
+    line-height: 1.5;
+    list-style-position: inside;
+    list-style-type: square;
+    text-indent: 10px;
+}
+
+#trajetoria {
+    background-image: linear-gradient(to right, rgba(128, 128, 128, 0.582), transparent);
+    display: block;
+    margin: 10px;
+    padding: 15px;
+    font-size: 18px;
+    text-align: justify;
+    columns: 2;
+}
+
+#trajetoria h1 {
+    padding: 20px 0px 10px 0px;
+    text-indent: 20px;    
+    border-bottom: 1px solid black;
+}
+
+#trajetoria> ul {
+    list-style-position: inside;
+    list-style-type: '\1F5F9\00A0\00A0';
+    padding: 10px;
+    line-height: 1.2;
+}
+
+#trajetoria-atual {
+    list-style-type: '\23F3\00A0\00A0';
+}
+
+#trajetoria>ul>li {
+    padding: 10px;
+}
+
+/*PÁGINA 3*/
+#habilidades h1 {
+    background-image: linear-gradient(to right, rgba(146, 207, 207, 0.778), transparent);
+    display: block;
+    font-family: var(--fonte-pixel);
+    text-align: center;
+    padding: 20px;
+    margin: 0px 0px 20px 0px;
+}
+
+#habilidades h2 {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#habilidades p {
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    max-width: 600px;
+    transition-duration: 1s;
+    font-size: 20px;
+}
+
+.destaque:hover>p {
+    background-color: rgba(146, 207, 207, 0.778);
+}
+
+#softskills {
+    display: inline-block;
+    width: 300px;
+    height: 150px;
+    border: 2px solid;
+    border-radius: 10px 10px 0px 0px;
+    margin: 10px;
+}
+
+#softskills h1 {
+    background-color: rgba(146, 207, 207, 0.778);
+    border-radius: 10px 10px 0px 0px;
+    padding: 5px;
+}
+
+#softskills>ul {
+    list-style: none;
+    padding: 10px;
+}
+
+#andamento {
+    display: inline-block;
+    width: 300px;
+    height: 150px;
+    border: 2px solid;
+    border-radius: 10px 10px 0px 0px;
+    margin: 10px;
+}
+
+#andamento h1 {
+    padding: 10px;
+    background-color: rgba(146, 207, 207, 0.778);
+    border-radius: 10px 10px 0px 0px;
+}
+
+#andamento>ul {
+    list-style: none;
+    padding: 10px;
+}
+
+/*PÁGINA 4*/
+#perspectivas {
+    display: inline-block;
+}
+
+#perspectivas>ul {
+    list-style-position: inside;
+}
+
+#curiosidade {
+    display: inline-block;
+    max-width: 600px;
+    margin: 40px;
+    padding: 30px;
+    border-radius: 0px 20px 0px 40px;
+    outline: 2px solid black;
+    box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.551);
+}
+
+#curiosidade h1 {
+    background-color: rgba(146, 207, 207, 0.778);
+    padding: 15px;
+    border-radius: 0px 20px 0px 0px;
+    margin: -30px -30px 0px -30px;
+    font-family: var(--fonte-pixel);
+    font-size: 20px;
+    text-indent: 20px;
+}
+
+#curiosidade h2 {
+    padding: 20px;
+    font-size: 18px;
+}
+
+#curiosidade p {
+    padding: 15px;
+    font-size: 16px;
+}
+
+/*RODAPÉ*/
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
