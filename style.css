@@ -78,8 +78,8 @@ header {
 
 #avatar {
     display: inline-block;
-    margin: 10px;
-    max-width: 350px;
+    max-width: 450px;
+    float: right, none;
 }
 
 #avatar img {
