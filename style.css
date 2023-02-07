@@ -58,7 +58,7 @@ nav>a:hover {
 
 /*CABEÇALHO/ PÁGINA 1*/
 header {
-    min-height: 700px;
+    min-height: 550px;
     margin: auto;
     padding: 0px;
     border: none;
@@ -78,8 +78,8 @@ header {
 
 #avatar {
     display: inline-block;
-    max-width: 450px;
-    float: right, none;
+    max-width: 400px;
+    float: right;
 }
 
 #avatar img {
