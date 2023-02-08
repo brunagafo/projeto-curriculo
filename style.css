@@ -15,13 +15,16 @@
 :root {
     --fonte-padrão: 'Courier New', Courier, monospace;
     --fonte-pixel: 'Pixel', 'Courier New', Courier, monospace;
-    --verde0: rgba(146, 207, 207, 0.219);
-    --verde1: rgba(146, 207, 207, 0.778);
     --cinza0: rgba(128, 128, 128, 0.147);
     --cinza1: rgba(128, 128, 128, 0.582);
     --cinza2: rgba(128, 128, 128);
+    --verde0: rgba(239,251,251,1);
+    --verde1: rgba(196,234,234,1);
+    --verde2: rgba(146, 207, 207);
+    --verde2t:rgba(146, 207, 207, 0.778);
+    --verde3: rgba( 96,170,170,1) ;
+    --verde4: rgba( 59,139,139,1);
 }
-
 * {
     margin: 0px;
     padding: 0px;
@@ -37,19 +40,37 @@ body {
 
 /* MENU DE NAVEGAÇÃO*/
 nav {
-    min-height: 50px;
-    padding: 20px 20px 5px 20px;
-    border-bottom: 1px solid var(--cinza2);
+    padding: 20px 20px 0px 20px;
+    border-bottom: 2px solid var(--cinza0);
+
 }
 
 nav>a {
     display: inline-block;
-    padding: 10px 20px 10px 20px;
+    margin: 0px -15px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
+    padding: 15px 20px 15px 20px;
     color: black;
     font-size: 20px;
     font-weight: medium;
     text-decoration: none;
     transition-duration: 0.5s;
+}
+
+#menu1 {
+    background-color: var(--verde3);
+}
+
+#menu2 {
+    background-color: var(--verde2);
+}
+
+#menu3 {
+    background-color: var(--verde1);
+}
+
+#menu4 {
+    background-color: var(--verde0);
 }
 
 nav>a::before {
@@ -58,8 +79,6 @@ nav>a::before {
 
 nav>a:hover {
     font-weight: bold;
-    background-color: var(--verde0);
-    border-radius: 4px;
 }
 
 /*CABEÇALHO/ PÁGINA 1*/
@@ -67,18 +86,20 @@ header {
     min-height: 550px;
     display: flex;
     justify-content: space-around;
+    margin: 30px 0px 30px 0px;
     padding: 10px;
-    background-image: linear-gradient(to right, rgba(128, 128, 128, 0.582), transparent);
+    background-image: linear-gradient(to right, var(--cinza1), transparent);
 }
 
 #intro {
     display: inline-block;
-    background-color: rgba(146, 207, 207, 0.778);
+    background-color: var(--verde2t);
     max-width: 500px;
     max-height: 300px;
     margin: auto;
     padding: 30px;
     border-radius: 10px;
+    border: 2px dashed var(--cinza1);
     font-size: 22px;
     line-height: 1.5;
 }
@@ -90,8 +111,18 @@ header {
     padding: 10px;
 }
 
+#avatar h2 {
+    border-left: 2px solid black;
+    padding-left: 10px;
+}
+
 #avatar img {
     width: 100%;
+    border-radius: 10px;
+}
+#avatar aside {
+    margin-left: -10px;
+    padding: 5px;
 }
 
 /*PRINCIPAL*/
@@ -117,9 +148,9 @@ main .novasessao {
 }
 
 .linkexterno {
-    padding: 2px;
+    padding: 1px 7px 1px 7px;
     text-decoration: none;
-    background-color: var(--verde0);
+    background-color: var(--verde2t);
     color: black;
     border-radius: 20px;
 }
@@ -139,7 +170,7 @@ main .novasessao {
 }
 
 #sobremim h1 {
-    background-color: rgba(146, 207, 207, 0.778);
+    background-color: var(--verde2t);
     padding: 15px;
     border-radius: 5px 5px 0px 0px;
     margin: -15px -16px 0px -15px;
@@ -157,7 +188,7 @@ main .novasessao {
 }
 
 #trajetoria {
-    background-image: linear-gradient(to right, rgba(128, 128, 128, 0.582), transparent);
+    background-image: linear-gradient(to right, var(--cinza1), transparent);
     display: block;
     margin: 10px;
     padding: 15px;
@@ -188,7 +219,7 @@ main .novasessao {
 
 /*PÁGINA 3*/
 #habilidades h1 {
-    background-image: linear-gradient(to right, rgba(146, 207, 207, 0.778), transparent);
+    background-image: linear-gradient(to right, var(--verde2t) , transparent);
     padding: 20px;
     margin: -20px -20px 20px -20px;
     font-family: var(--fonte-pixel);
@@ -205,15 +236,17 @@ main .novasessao {
 #habilidades p {
     display: inline-block;
     padding: 20px;
+    margin-left: 40px;
     margin-bottom: 20px;
     text-align: justify;
-    max-width: 600px;
+    max-width: 680px;
     transition-duration: 1s;
     font-size: 20px;
+    line-height: 1.1;
 }
 
 .destaque:hover>p {
-    background-color: rgba(146, 207, 207, 0.778);
+    background-color: var(--verde3);
 }
 
 #softskills {
@@ -225,7 +258,7 @@ main .novasessao {
 }
 
 #softskills h1 {
-    background-color: rgba(146, 207, 207, 0.778);
+    background-color: var(--verde2t);
     border-radius: 10px 10px 0px 0px;
     padding: 5px;
 }
@@ -245,7 +278,7 @@ main .novasessao {
 
 #andamento h1 {
     padding: 10px;
-    background-color: rgba(146, 207, 207, 0.778);
+    background-color: var(--verde2t);
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -273,7 +306,7 @@ main .novasessao {
 }
 
 #curiosidade h1 {
-    background-color: rgba(146, 207, 207, 0.778);
+    background-color: var(--verde2t);
     padding: 15px;
     border-radius: 0px 20px 0px 0px;
     margin: -30px -30px 0px -30px;
