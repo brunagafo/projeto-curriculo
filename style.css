@@ -5,6 +5,12 @@
     src: url(Fontes/Pokemon_GB.ttf);
 }
 
+@media screen and (max-width: 600px){
+    header {
+      flex-direction: column;
+    }
+  }
+
 /*VARIÁVEIS*/
 :root {
     --fonte-padrão: 'Courier New', Courier, monospace;
@@ -26,6 +32,7 @@ body {
     font-family: var(--fonte-padrão);
     background-color: white;
     /* For browsers that do not support gradients */
+    /*background em desenvolvimento*/
 }
 
 /* MENU DE NAVEGAÇÃO*/
@@ -50,7 +57,6 @@ nav>a::before {
 }
 
 nav>a:hover {
-    /*problema em tela pequena -> overflow*/
     font-weight: bold;
     background-color: var(--verde0);
     border-radius: 4px;
@@ -59,9 +65,9 @@ nav>a:hover {
 /*CABEÇALHO/ PÁGINA 1*/
 header {
     min-height: 550px;
-    margin: auto;
-    padding: 0px;
-    border: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
     background-image: linear-gradient(to right, rgba(128, 128, 128, 0.582), transparent);
 }
 
@@ -69,7 +75,8 @@ header {
     display: inline-block;
     background-color: rgba(146, 207, 207, 0.778);
     max-width: 500px;
-    margin: 10px;
+    max-height: 300px;
+    margin: auto;
     padding:30px;
     border-radius: 10px;
     font-size: 22px;
@@ -79,7 +86,8 @@ header {
 #avatar {
     display: inline-block;
     max-width: 400px;
-    float: right;
+    margin: auto;
+    padding: 10px;
 }
 
 #avatar img {
@@ -88,7 +96,7 @@ header {
 
 /*PRINCIPAL*/
 main {
-    max-width: 1300px;
+    max-width: 1200px;
     min-width: 280px;
     /*menores resoluções de smartphones + margem presumida*/
     margin: auto;
@@ -101,7 +109,6 @@ main img {
 }
 
 main .novasessao {
-    width: auto;
     margin: 30px 0px 30px 0px;
     padding: 20px;
     border: 2px solid black;
