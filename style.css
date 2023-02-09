@@ -5,7 +5,7 @@
     src: url(Fontes/Pokemon_GB.ttf);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     header {
         flex-direction: column;
     }
@@ -15,6 +15,19 @@
     #intro h1 {
         font-size: 20px;
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    #intro {
+        width: 200px;
+        height: 260px;
+    }
+    #intro h1 {
+        font-size: 24px;
+    }
+    #avatar {
+        width: 300px;
     }
 }
 
