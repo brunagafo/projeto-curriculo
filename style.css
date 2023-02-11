@@ -16,6 +16,12 @@
         font-size: 20px;
         text-align: center;
     }
+    #p-dois {
+        flex-direction: column;
+    }
+    #hab-blocos {
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
@@ -54,6 +60,11 @@
 body {
     font-family: var(--fonte-padrão);
     background-color: white;
+    /*background-image: url(#);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;*/
     /* For browsers that do not support gradients */
     /*background em desenvolvimento*/
 }
@@ -180,8 +191,13 @@ main .novasessao {
 }
 
 /*PÁGINA 2*/
+#p-dois {
+    display: flex;
+    justify-content: space-around;
+}
 #sobremim {
-    display: block;
+    display: inline-block;
+    max-width: 300px;
     padding: 10px;
     border: 20px solid;
     border-image-source: url(Imagens/borda.png);
@@ -191,11 +207,12 @@ main .novasessao {
 
 #sobremim h1 {
     background-color: var(--verde2t);
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px 5px 0px 0px;
     margin: -15px -16px 0px -15px;
     font-family: var(--fonte-pixel);
     font-size: 22px;
+    line-height: 1.2;
     text-align: center;
 }
 
@@ -204,12 +221,16 @@ main .novasessao {
     line-height: 1.5;
     list-style-position: inside;
     list-style-type: square;
-    text-indent: 10px;
+    text-align: left;
+}
+#sobremim ul>li {
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 #trajetoria {
     background-image: linear-gradient(to right, var(--cinza1), transparent);
-    display: block;
+    display: inline-block;
     margin: 10px;
     padding: 15px;
     font-size: 20px;
@@ -351,6 +372,17 @@ main .novasessao {
 #curiosidade p {
     padding: 15px;
     font-size: 16px;
+}
+
+#inicio-botao {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 70px;
+    opacity: 30%;
+    margin-top: 250px;
+    margin-right: 20px;
 }
 
 /*RODAPÉ*/
