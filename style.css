@@ -22,6 +22,12 @@
     #hab-blocos {
         flex-direction: column;
     }
+    #prox-projetos {
+        flex-direction: column;
+    }
+    #prox-projetos>div {
+        max-width:240px;
+    }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
@@ -307,9 +313,9 @@ main .novasessao {
 }
 
 #softskills h1 {
+    padding: 10px;
     background-color: var(--verde2t);
     border-radius: 10px 10px 0px 0px;
-    padding: 5px;
 }
 
 #softskills>ul {
@@ -337,12 +343,46 @@ main .novasessao {
 }
 
 /*PÁGINA 4*/
+#persp-titulo {
+    background-image: linear-gradient(to right, var(--verde2t), transparent);
+    padding: 20px;
+    line-height: 1.4;
+    margin: -20px -20px 0px -20px;
+    font-family: var(--fonte-pixel);
+    font-size: 26px;
+    text-align: center;
+}
+
+#p-quatro h2 { /*está afetando o #curiosidade h2, arrumar*/
+    padding: 5px;
+    margin: 0px -20px 10px -20px;
+}
+
 #perspectivas {
-    display: inline-block;
+    display: block;
+    padding: 20px;
 }
 
 #perspectivas>ul {
     list-style-position: inside;
+}
+
+#perspectivas p{
+    display: block;
+    border-right: 1px solid black;
+    text-align: right;
+    padding: 20px;
+}
+
+#perspectivas>p>a {
+    text-decoration: none;
+    color: black;
+}
+
+#perspectivas>p>a:hover {
+    font-weight: bold;
+    background-color: var(--verde1);
+    border-radius: 10px;
 }
 
 #curiosidade {
@@ -374,6 +414,53 @@ main .novasessao {
     font-size: 16px;
 }
 
+/*PÁGINA 5*/
+#proj-titulo {
+    background-image: linear-gradient(to right, var(--verde2t), transparent);
+    padding: 20px;
+    line-height: 1.4;
+    margin: -20px -20px 0px -20px;
+    font-family: var(--fonte-pixel);
+    font-size: 26px;
+    text-align: center;
+}
+
+#p-cinco h2 {
+    padding: 5px;
+    margin: 0px -20px 10px -20px;
+}
+
+#prox-projetos {
+    display: flex;
+    justify-content: space-around;
+}
+
+#prox-projetos>div {
+    position: relative;
+    display: inline-block;
+    border-radius: 50px;
+    margin: 20px;
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, var(--verde1), transparent);
+    width: 300px;
+    height: 250px;
+}
+
+#prox-projetos>div:hover {
+    letter-spacing: 3px;
+    transition-duration: 1.1s;
+}
+
+#prox-projetos h1 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    margin: -25px 0 0 -25px; 
+    padding: 10px;
+    font-size: normal;
+}
+
+/*BOTÃO INÍCIO*/
 #inicio-botao {
     display: block;
     position: fixed;
