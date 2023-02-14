@@ -10,45 +10,57 @@
         text-align: center;
         padding: 10px 5px 10px 5px;
     }
+
     #menu a {
         font-size: 16px;
         padding: 12px 8px 10px 8px;
         border-radius: 15px 15px 0px 0px;
     }
+
     #menu>a::before {
         content: ' ';
     }
+
     header {
         flex-direction: column;
     }
+
     #intro {
         width: 300px;
     }
+
     #intro h1 {
         font-size: 20px;
         text-align: center;
     }
+
     #p-dois {
         flex-direction: column;
     }
+
     #sobremim {
         max-width: 80px;
         max-height: 400px;
         padding: 5px;
         font-size: 18px;
     }
+
     #trajetoria>ul {
         font-size: 18px;
         line-height: 1;
     }
-    #p-quatro-alinhamento {
+    /*AJUSTAR OS ÍCONES DAS LISTAS*/
+    #p-quatro-alinhamento { 
         flex-direction: column;
+        font-size: 16px;
     }
+
     #prox-projetos {
         flex-direction: column;
     }
+
     #prox-projetos>div {
-        max-width:240px;
+        max-width: 240px;
     }
 }
 
@@ -57,24 +69,30 @@
         text-align: center;
         padding: 10px 5px 10px 5px;
     }
+
     #menu a {
         font-size: 18px;
         padding: 12px 10px 10px 10px;
         border-radius: 15px 15px 0px 0px;
     }
+
     #intro {
         width: 200px;
         height: 260px;
     }
+
     #intro h1 {
         font-size: 24px;
     }
+
     #avatar {
         width: 300px;
     }
+
     #sobremim {
         max-height: 500px;
     }
+
     #prox-projetos {
         flex-direction: column;
     }
@@ -87,16 +105,21 @@
     --cinza0: rgba(128, 128, 128, 0.147);
     --cinza1: rgba(128, 128, 128, 0.582);
     --cinza2: rgba(128, 128, 128);
-    --verde0: rgba(239,251,251,1);
-    --verde1: rgba(196,234,234,1);
+    --verde0: rgba(239, 251, 251, 1);
+    --verde1: rgba(196, 234, 234, 1);
     --verde2: rgba(146, 207, 207);
-    --verde2t:rgba(146, 207, 207, 0.778);
-    --verde3: rgba( 96,170,170,1) ;
-    --verde4: rgba( 59,139,139,1);
+    --verde2t: rgba(146, 207, 207, 0.778);
+    --verde3: rgba(96, 170, 170, 1);
+    --verde4: rgba(59, 139, 139, 1);
 }
+
 * {
     margin: 0px;
     padding: 0px;
+}
+
+body,html {
+    min-height: 100vh;
 }
 
 /*CORPO*/
@@ -108,7 +131,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;*/
-    /* For browsers that do not support gradients */
     /*background em desenvolvimento*/
 }
 
@@ -120,9 +142,9 @@ nav {
 
 nav>a {
     display: inline-block;
-    margin: 0px -15px 0px 0px;
-    border-radius: 30px 30px 0px 0px;
     padding: 15px 20px 15px 20px;
+    border-radius: 30px 30px 0px 0px;
+    margin: 0px -15px 0px 0px;
     color: black;
     font-size: 20px;
     font-weight: medium;
@@ -161,61 +183,71 @@ nav>a:hover {
 /*CABEÇALHO/ PÁGINA 1*/
 header {
     /*min-height: 550px;*/
-    max-height: fit-content;
     display: flex;
-    justify-content: space-around;
-    margin: 30px 0px 30px 0px;
     padding: 10px;
+    margin: 30px 0px 30px 0px;
+    max-height: fit-content;
+    justify-content: space-around;
     background-image: linear-gradient(to right, var(--cinza1), transparent);
 }
 
 #intro {
     display: inline-block;
-    background-color: var(--verde2t);
+    padding: 30px;
+    margin: auto;
+    border: 2px dashed var(--cinza1);
+    border-radius: 10px;
     max-width: 500px;
     max-height: 200px;
+    background-color: var(--verde2t);
     text-align: center;
-    margin: auto;
-    padding: 30px;
-    border-radius: 10px;
-    border: 2px dashed var(--cinza1);
     font-size: 16px;
     line-height: 1.5;
 }
 
+/*BANNER EM DESENVOLVIMENTO*/
+#intro p {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px 10px;
+    text-align: center;
+}
+
 #avatar {
     display: inline-block;
-    max-width: 300px;
-    margin: auto;
     padding: 30px;
+    margin: auto;
+    max-width: 300px;
 }
 
 #avatar h2 {
-    border-left: 2px solid black;
     padding-left: 10px;
+    border-left: 2px solid black;
     font-size: 16px;
+    font-variant: small-caps;
 }
 
 #avatar img {
-    width: 100%;
-    border-radius: 10px;
     padding: 5px;
+    border-radius: 10px;
+    width: 100%;
 }
+
 #avatar aside {
-    text-align: right;
-    margin-left: -10px;
     padding-bottom: 15px;
+    margin-left: -10px;
+    text-align: right;
     font-size: 15px;
 }
 
 /*PRINCIPAL*/
 main {
-    max-width: 1200px;
-    min-width: 280px;
-    /*menores resoluções de smartphones + margem presumida*/
+    padding: 20px;
     margin: auto;
     margin-bottom: 30px;
-    padding: 20px;
+    max-width: 1300px;
+    min-width: 280px;
+    /*menores resoluções de smartphones + margem presumida*/
 }
 
 main img {
@@ -223,19 +255,19 @@ main img {
 }
 
 main .novasessao {
-    margin: 30px 0px 30px 0px;
     padding: 20px;
-    border: 2px solid black;
+    padding-bottom: 80px;
+    /*border: 2px solid black;*/
     font-size: 22px;
     line-height: 1;
 }
 
 .linkexterno {
     padding: 1px 7px 1px 7px;
-    text-decoration: none;
+    border-radius: 20px;
     background-color: var(--verde2t);
     color: black;
-    border-radius: 20px;
+    text-decoration: none;
 }
 
 .linkexterno:hover {
@@ -247,62 +279,66 @@ main .novasessao {
     display: flex;
     justify-content: space-around;
 }
+
 #sobremim {
     display: inline-block;
-    max-width: 300px;
     padding: 10px;
     border: 20px solid;
     border-image-source: url(Imagens/borda.png);
     border-image-slice: 97;
+    margin-bottom: 30px;
+    max-width: 300px;
     font-weight: bold;
 }
 
 #sobremim h1 {
-    background-color: var(--verde2t);
     padding: 10px;
     border-radius: 5px 5px 0px 0px;
     margin: -15px -16px 0px -15px;
+    background-color: var(--verde2t);
     font-family: var(--fonte-pixel);
+    text-align: center;
     font-size: 20px;
     line-height: 1.2;
-    text-align: center;
 }
 
 #sobremim ul {
-    margin: auto;
     padding: 10px;
-    line-height: 1.2;
+    margin: auto;
+    text-align: left;
     list-style-position: inside;
     list-style-type: square;
-    text-align: left;
+    line-height: 1.2;
 }
+
 #sobremim ul>li {
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding: 20px 0px 20px 0px;
 }
 
 #trajetoria {
-    background-image: linear-gradient(to right, var(--cinza1), transparent);
     display: inline-block;
-    margin: 10px;
     padding: 15px;
-    font-size: 20px;
+    border-radius: 40px 0px 0px 40px;
+    max-width: 790px;
+    background-image: linear-gradient(to right, var(--cinza1), transparent);
     text-align: justify;
+    font-size: 20px;
 }
 
 #trajetoria h1 {
     padding: 20px 0px 10px 0px;
-    text-indent: 20px;
     border-bottom: 1px solid black;
     font-size: 26px;
+    text-indent: 20px;
 }
 
 #trajetoria>ul {
-    list-style-position: inside;
-    list-style-type: '\2714\00A0\00A0'; /*emoji checkbox falha no mobile*/
     padding: 10px;
-    line-height: 1.2;
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    /*emoji checkbox falha no mobile*/
     font-size: 18px;
+    line-height: 1.2;
 }
 
 #trajetoria-atual {
@@ -316,9 +352,10 @@ main .novasessao {
 /*PÁGINA 3*/
 
 #hab-titulo {
-    background-image: linear-gradient(to right, var(--verde2t) , transparent);
     padding: 20px;
+    border-radius: 40px 0px 0px 40px;
     margin: -20px -20px 20px -20px;
+    background-image: linear-gradient(to right, var(--verde2t), transparent);
     font-family: var(--fonte-pixel);
     font-size: 24px;
     text-align: center;
@@ -326,26 +363,27 @@ main .novasessao {
 
 #hab-principais {
     display: inline-block;
-    border-right: 1px solid black;
+    padding: 10px 30px 30px 0px;
+    /*margin-right: 30px;*/
 }
 
 #hab-principais h2 {
     display: inline-block;
     padding: 10px 50px;
     max-width: 100px;
-    line-height: 1.5;
     font-size: 26px;
+    line-height: 1.5;
 }
 
 #hab-principais p {
     display: inline-block;
     padding: 10px;
     margin: 10px;
-    text-align: justify;
     max-width: 600px;
-    transition-duration: 1s;
+    text-align: justify;
     font-size: 18px;
     line-height: 1.1;
+    transition-duration: 1s;
 }
 
 .destaque:hover>p {
@@ -354,49 +392,57 @@ main .novasessao {
 
 #softskills {
     display: inline-block;
-    max-width: 300px;
-    /*border: 2px solid;*/
-    border-radius: 10px 10px 0px 0px;
+    padding: 10px 30px;
+    max-width: 400px;
+    /*border: 2px solid;
+    border-radius: 10px 0px;*/
+    vertical-align: top;
 }
 
 #softskills h1 {
-    padding: 10px;
-    background-color: var(--verde2t);
-    border-radius: 10px 10px 0px 0px;
+    padding: 15px;
+    border-radius: 0px 40px 40px 0px;
+    margin: 0px -30px;
+    background-image: linear-gradient(to left, var(--verde2t), transparent);
+    text-align: center;
 }
 
 #softskills>ul {
-    list-style: none;
     padding: 10px;
+    list-style: none;
     line-height: 1.2;
 }
+
 #softskills li {
     padding: 10px;
+    font-weight: bold;
 }
 
 /*PÁGINA 4*/
 #persp-titulo {
-    background-image: linear-gradient(to right, var(--verde2t), transparent);
     padding: 20px;
-    line-height: 1.4;
+    border-radius: 40px 0px 0px 40px;
     margin: -20px -20px 0px -20px;
+    background-image: linear-gradient(to right, var(--verde2t), transparent);
     font-family: var(--fonte-pixel);
-    font-size: 26px;
     text-align: center;
+    font-size: 26px;
+    line-height: 1.4;
 }
 
-#p-quatro h3 { /*está afetando o #curiosidade h2, arrumar*/
+/*BANNER EM DESENVOLVIMENTO*/
+#p-quatro h3 {
     padding: 5px;
-    margin: 0px -20px 10px -20px;
+    border-radius: 10px 10px;
+    margin: 10px;
+    text-align: center;
 }
 
 #p-quatro-alinhamento {
     display: flex;
-    justify-content: space-around;
+    padding: 30px;
     margin-top: 30px;
-    padding: 10px;
-    /*border-image-source: url(Imagens/borda.png);
-    border-image-slice: 97;*/
+    justify-content: space-around;
     background-image: linear-gradient(to top, var(--verde1), transparent);
 }
 
@@ -407,52 +453,72 @@ main .novasessao {
 
 #andamento h1 {
     padding: 20px;
-    text-align: center;
     font-family: var(--fonte-pixel);
     font-size: 20px;
+    text-align: center;
+    line-height: 1.2;
 }
 
 #andamento>ul {
-    list-style: none;
     padding: 10px;
+    text-align: left;
+    list-style: none;
     line-height: 1.5;
-    text-align: center;
+}
+
+#andamento li {
+    padding: 10px;
+}
+
+#andamento li>img {
+    width: 35px;
+    vertical-align: middle;
 }
 
 #perspectivas {
-    max-width: 600px;
     display: inline-block;
+    max-width: 600px;
 }
 
 #perspectivas h1 {
     padding: 20px;
-    text-align: center;
     font-family: var(--fonte-pixel);
+    text-align: center;
     font-size: 20px;
+    line-height: 1.2;
 }
 
 #perspectivas>ul {
-    list-style: none;
     padding: 10px;
+    list-style: none;
+    text-align: left;
+    columns: 2;
     line-height: 1.5;
-    text-align: center;
+}
 
+#perspectivas li {
+    padding: 10px;
+}
+
+#perspectivas li>img {
+    width: 35px;
+    vertical-align: middle;
 }
 
 #curiosidade {
     display: inline-block;
     padding: 30px;
-    margin: 20px 0px 20px 0px;
     border-radius: 0px 20px 0px 40px;
     outline: 2px solid black;
+    margin: 20px 0px 20px 0px;
     box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.551);
 }
 
 #curiosidade h1 {
-    background-color: var(--verde2t);
     padding: 15px;
     border-radius: 0px 20px 0px 0px;
     margin: -30px -30px 0px -30px;
+    background-color: var(--verde2t);
     font-family: var(--fonte-pixel);
     font-size: 20px;
     text-indent: 20px;
@@ -465,18 +531,23 @@ main .novasessao {
 
 /*PÁGINA 5*/
 #proj-titulo {
-    background-image: linear-gradient(to right, var(--verde2t), transparent);
     padding: 20px;
-    line-height: 1.4;
+    border-radius: 40px 0px 0px 40px;
     margin: -20px -20px 0px -20px;
+    background-image: linear-gradient(to right, var(--verde2t), transparent);
     font-family: var(--fonte-pixel);
-    font-size: 26px;
     text-align: center;
+    font-size: 26px;
+    line-height: 1.4;
 }
 
+/*BANNER EM DESENVOLVIMENTO*/
 #p-cinco h2 {
     padding: 5px;
-    margin: 0px -20px 10px -20px;
+    border-radius: 10px 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 24px;
 }
 
 #prox-projetos {
@@ -485,14 +556,14 @@ main .novasessao {
 }
 
 #prox-projetos>div {
-    position: relative;
     display: inline-block;
+    position: relative;
+    padding: 20px;
     border-radius: 50px;
     margin: 20px;
-    padding: 20px;
-    background-image: linear-gradient(to bottom right, var(--verde1), transparent);
     width: 300px;
     height: 250px;
+    background-image: linear-gradient(to bottom right, var(--verde1), transparent);
 }
 
 #prox-projetos>div:hover {
@@ -504,8 +575,9 @@ main .novasessao {
     position: absolute;
     top: 50%;
     left: 30%;
-    margin: -25px 0 0 -25px; 
     padding: 10px;
+    margin: -25px 0 0 -25px;
+
     font-size: normal;
 }
 
@@ -516,15 +588,15 @@ main .novasessao {
     right: 0;
     top: 50%;
     width: 70px;
-    opacity: 30%;
     margin-top: 250px;
     margin-right: 20px;
+    opacity: 30%;
 }
 
 /*RODAPÉ*/
 footer {
+    padding: 10px;
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10px;
 }
