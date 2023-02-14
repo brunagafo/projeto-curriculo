@@ -6,6 +6,18 @@
 }
 
 @media screen and (max-width: 600px) {
+    #menu {
+        text-align: center;
+        padding: 10px 5px 10px 5px;
+    }
+    #menu a {
+        font-size: 16px;
+        padding: 12px 8px 10px 8px;
+        border-radius: 15px 15px 0px 0px;
+    }
+    #menu>a::before {
+        content: ' ';
+    }
     header {
         flex-direction: column;
     }
@@ -19,6 +31,19 @@
     #p-dois {
         flex-direction: column;
     }
+    #sobremim {
+        max-width: 80px;
+        max-height: 400px;
+        padding: 5px;
+        font-size: 18px;
+    }
+    #trajetoria>ul {
+        font-size: 18px;
+        line-height: 1;
+    }
+    #p-tres h2 {
+        font-size: 22px;
+    }
     #hab-blocos {
         flex-direction: column;
     }
@@ -31,6 +56,15 @@
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
+    #menu {
+        text-align: center;
+        padding: 10px 5px 10px 5px;
+    }
+    #menu a {
+        font-size: 18px;
+        padding: 12px 10px 10px 10px;
+        border-radius: 15px 15px 0px 0px;
+    }
     #intro {
         width: 200px;
         height: 260px;
@@ -40,6 +74,12 @@
     }
     #avatar {
         width: 300px;
+    }
+    #sobremim {
+        max-height: 500px;
+    }
+    #prox-projetos {
+        flex-direction: column;
     }
 }
 
@@ -79,7 +119,6 @@ body {
 nav {
     padding: 20px 20px 0px 20px;
     border-bottom: 2px solid var(--cinza0);
-
 }
 
 nav>a {
@@ -251,7 +290,7 @@ main .novasessao {
 
 #trajetoria>ul {
     list-style-position: inside;
-    list-style-type: '\1F5F9\00A0\00A0'; /*emoji checkbox falha no mobile*/
+    list-style-type: '\2714\00A0\00A0'; /*emoji checkbox falha no mobile*/
     padding: 10px;
     line-height: 1.2;
 }
