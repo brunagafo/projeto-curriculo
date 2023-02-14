@@ -41,10 +41,7 @@
         font-size: 18px;
         line-height: 1;
     }
-    #p-tres h2 {
-        font-size: 22px;
-    }
-    #hab-blocos {
+    #p-quatro-alinhamento {
         flex-direction: column;
     }
     #prox-projetos {
@@ -133,6 +130,10 @@ nav>a {
     transition-duration: 0.5s;
 }
 
+#curriculo {
+    #
+}
+
 #menu1 {
     background-color: var(--verde3);
 }
@@ -159,7 +160,8 @@ nav>a:hover {
 
 /*CABEÇALHO/ PÁGINA 1*/
 header {
-    min-height: 550px;
+    /*min-height: 550px;*/
+    max-height: fit-content;
     display: flex;
     justify-content: space-around;
     margin: 30px 0px 30px 0px;
@@ -171,34 +173,39 @@ header {
     display: inline-block;
     background-color: var(--verde2t);
     max-width: 500px;
-    max-height: 300px;
+    max-height: 200px;
+    text-align: center;
     margin: auto;
     padding: 30px;
     border-radius: 10px;
     border: 2px dashed var(--cinza1);
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
 #avatar {
     display: inline-block;
-    max-width: 400px;
+    max-width: 300px;
     margin: auto;
-    padding: 10px;
+    padding: 30px;
 }
 
 #avatar h2 {
     border-left: 2px solid black;
     padding-left: 10px;
+    font-size: 16px;
 }
 
 #avatar img {
     width: 100%;
     border-radius: 10px;
+    padding: 5px;
 }
 #avatar aside {
+    text-align: right;
     margin-left: -10px;
-    padding: 5px;
+    padding-bottom: 15px;
+    font-size: 15px;
 }
 
 /*PRINCIPAL*/
@@ -256,14 +263,15 @@ main .novasessao {
     border-radius: 5px 5px 0px 0px;
     margin: -15px -16px 0px -15px;
     font-family: var(--fonte-pixel);
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.2;
     text-align: center;
 }
 
 #sobremim ul {
+    margin: auto;
     padding: 10px;
-    line-height: 1.5;
+    line-height: 1.2;
     list-style-position: inside;
     list-style-type: square;
     text-align: left;
@@ -286,6 +294,7 @@ main .novasessao {
     padding: 20px 0px 10px 0px;
     text-indent: 20px;
     border-bottom: 1px solid black;
+    font-size: 26px;
 }
 
 #trajetoria>ul {
@@ -293,6 +302,7 @@ main .novasessao {
     list-style-type: '\2714\00A0\00A0'; /*emoji checkbox falha no mobile*/
     padding: 10px;
     line-height: 1.2;
+    font-size: 18px;
 }
 
 #trajetoria-atual {
@@ -300,37 +310,41 @@ main .novasessao {
 }
 
 #trajetoria>ul>li {
-    padding: 10px;
+    padding: 15px;
 }
 
 /*PÁGINA 3*/
+
 #hab-titulo {
     background-image: linear-gradient(to right, var(--verde2t) , transparent);
     padding: 20px;
     margin: -20px -20px 20px -20px;
     font-family: var(--fonte-pixel);
-    font-size: 26px;
+    font-size: 24px;
     text-align: center;
+}
+
+#hab-principais {
+    display: inline-block;
+    border-right: 1px solid black;
 }
 
 #hab-principais h2 {
     display: inline-block;
-    padding: 10px;
-    padding-right: 50px;
-    margin-bottom: 20px;
+    padding: 10px 50px;
     max-width: 100px;
     line-height: 1.5;
+    font-size: 26px;
 }
 
 #hab-principais p {
     display: inline-block;
-    padding: 20px;
-    margin-left: 40px;
-    margin-bottom: 20px;
+    padding: 10px;
+    margin: 10px;
     text-align: justify;
-    max-width: 800px;
+    max-width: 600px;
     transition-duration: 1s;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.1;
 }
 
@@ -338,17 +352,11 @@ main .novasessao {
     background-color: var(--verde3);
 }
 
-#hab-blocos { /*Como organizar? adicionar mais um bloco? Muito texto?*/
-    display: flex;
-    justify-content: center;
-}
-
 #softskills {
     display: inline-block;
     max-width: 300px;
-    border: 2px solid;
+    /*border: 2px solid;*/
     border-radius: 10px 10px 0px 0px;
-    margin: 10px;
 }
 
 #softskills h1 {
@@ -360,24 +368,9 @@ main .novasessao {
 #softskills>ul {
     list-style: none;
     padding: 10px;
+    line-height: 1.2;
 }
-
-#andamento {
-    display: inline-block;
-    max-width: 300px;
-    border: 2px solid;
-    border-radius: 10px 10px 0px 0px;
-    margin: 10px;
-}
-
-#andamento h1 {
-    padding: 10px;
-    background-color: var(--verde2t);
-    border-radius: 10px 10px 0px 0px;
-}
-
-#andamento>ul {
-    list-style: none;
+#softskills li {
     padding: 10px;
 }
 
@@ -392,36 +385,58 @@ main .novasessao {
     text-align: center;
 }
 
-#p-quatro h2 { /*está afetando o #curiosidade h2, arrumar*/
+#p-quatro h3 { /*está afetando o #curiosidade h2, arrumar*/
     padding: 5px;
     margin: 0px -20px 10px -20px;
 }
 
-#perspectivas {
-    display: block;
+#p-quatro-alinhamento {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding: 10px;
+    /*border-image-source: url(Imagens/borda.png);
+    border-image-slice: 97;*/
+    background-image: linear-gradient(to top, var(--verde1), transparent);
+}
+
+#andamento {
+    display: inline-block;
+    max-width: 600px;
+}
+
+#andamento h1 {
     padding: 20px;
+    text-align: center;
+    font-family: var(--fonte-pixel);
+    font-size: 20px;
+}
+
+#andamento>ul {
+    list-style: none;
+    padding: 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#perspectivas {
+    max-width: 600px;
+    display: inline-block;
+}
+
+#perspectivas h1 {
+    padding: 20px;
+    text-align: center;
+    font-family: var(--fonte-pixel);
+    font-size: 20px;
 }
 
 #perspectivas>ul {
-    list-style-position: inside;
-}
+    list-style: none;
+    padding: 10px;
+    line-height: 1.5;
+    text-align: center;
 
-#perspectivas p{
-    display: block;
-    border-right: 1px solid black;
-    text-align: right;
-    padding: 20px;
-}
-
-#perspectivas>p>a {
-    text-decoration: none;
-    color: black;
-}
-
-#perspectivas>p>a:hover {
-    font-weight: bold;
-    background-color: var(--verde1);
-    border-radius: 10px;
 }
 
 #curiosidade {
@@ -441,11 +456,6 @@ main .novasessao {
     font-family: var(--fonte-pixel);
     font-size: 20px;
     text-indent: 20px;
-}
-
-#curiosidade h2 {
-    padding: 15px;
-    font-size: 18px;
 }
 
 #curiosidade p {
