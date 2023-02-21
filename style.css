@@ -125,7 +125,7 @@ body,html {
 /*CORPO*/
 body {
     font-family: var(--fonte-padrão);
-    background-color: white;
+    background-color: #fbf7f5;
     /*background-image: url(#);
     background-position: center center;
     background-repeat: no-repeat;
@@ -506,11 +506,13 @@ main .novasessao {
 }
 
 #curiosidade {
-    display: inline-block;
+    display: block;
     padding: 30px;
     border-radius: 0px 20px 0px 40px;
     outline: 2px solid black;
-    margin: 20px 0px 20px 0px;
+    margin: auto;
+    margin-top: 30px;
+    max-width: fit-content;
     box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.551);
 }
 
@@ -599,4 +601,15 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
+}
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer a:hover {
+    background-color: white;    
+    color: black;
+    padding: 2px;
+    border-radius: 3px;
 }
