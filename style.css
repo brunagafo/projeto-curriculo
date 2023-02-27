@@ -132,11 +132,11 @@ body,html {
 body {
     font-family: var(--fonte-padrão);
     background-color: #fbf7f5;
-    /*background-image: url(#);
+    background-image: url(Imagens/fundo.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;*/
+    background-attachment: fixed;
     /*background em desenvolvimento*/
 }
 
@@ -262,6 +262,12 @@ main .novasessao {
     line-height: 1;
 }
 
+.novasessao p {
+    background-color: rgba(255, 255, 255, 0.345);
+    border-radius: 15px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.163);
+}
+
 .linkexterno {
     padding: 1px 7px 1px 7px;
     border-radius: 20px;
@@ -322,6 +328,11 @@ main .novasessao {
 
 #sobremim ul>li {
     padding: 20px 20px;
+}
+
+#sobremim p {
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #trajetoria {
@@ -601,18 +612,20 @@ main .novasessao {
 
 /*RODAPÉ*/
 footer {
-    padding: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
     background-color: black;
-    color: white;
+    color: var(--verde1);
     text-align: center;
 }
 footer a {
-    color: white;
+    color: var(--verde1);
     font-weight: bold;
     text-decoration: none;
 }
 footer a:hover {
-    background-color: white;    
+    background-color: var(--verde1);
     color: black;
     padding: 2px;
     border-radius: 3px;
