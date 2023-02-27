@@ -614,7 +614,7 @@ main .novasessao {
 footer {
     padding: 20px;
     border-radius: 20px;
-    margin: 20px;
+    margin: 30px;
     background-color: black;
     color: var(--verde1);
     text-align: center;
@@ -629,4 +629,5 @@ footer a:hover {
     color: black;
     padding: 2px;
     border-radius: 3px;
+    transition: 1s;
 }
