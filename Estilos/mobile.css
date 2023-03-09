@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/*MEDIA QUERIES PARA MOBILE*/
+
+@media screen and (max-width: 600px) {
+    #menu {
+        text-align: center;
+        padding: 10px 5px 10px 5px;
+    }
+
+    #menu a {
+        font-size: 16px;
+        padding: 12px 8px 10px 8px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    #menu>a::before {
+        content: ' ';
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    #intro {
+        width: 300px;
+    }
+
+    #intro h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #p-dois {
+        flex-direction: column;
+        align-items: none;
+    }
+
+    #sobremim {
+        max-width: 800px;
+        max-height: 400px;
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    #sobremim>h1 {
+        margin: -12px -11px 0px -11px;
+    }
+
+    #sobremim>ul {
+        margin: 0px -11px 0px -11px;
+    }
+
+    #trajetoria>ul {
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    #container-hab {
+        flex-direction: column;
+    }
+
+    /*AJUSTAR OS ÍCONES DAS LISTAS*/
+    #prox-hab-alinhamento {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #prox-projetos {
+        flex-direction: column;
+    }
+
+    #prox-projetos>div {
+        max-width: 240px;
+    }
+}

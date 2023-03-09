@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/*MEDIA QUERIES PARA TABLET*/
+
+@media screen and (max-width: 1024px) {
+    #menu {
+        text-align: center;
+        padding: 10px 5px 10px 5px;
+    }
+
+    #menu a {
+        font-size: 18px;
+        padding: 12px 10px 10px 10px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    #intro {
+        width: 200px;
+        height: 260px;
+    }
+
+    #intro h1 {
+        font-size: 24px;
+    }
+
+    #avatar {
+        width: 300px;
+    }
+
+    #p-dois {
+        flex-direction: column;
+    }
+
+    #sobremim {
+        max-height: 500px;
+        max-width: 800px;
+    }
+
+    #trajetoria {
+        min-width: 500px;
+    }
+
+    #prox-projetos {
+        flex-direction: column;
+    }
+}
+
+/* MEDIA P/ IMPRESSÃO (EM DESENVOLVIMENTO)*/
+@media print {
+    #menu {
+        display: none;
+    }
+}
