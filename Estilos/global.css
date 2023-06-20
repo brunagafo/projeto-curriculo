@@ -12,7 +12,7 @@
     --fonte-padrão: 'Courier New', Courier, monospace;
     --fonte-pixel: 'Pixel', 'Courier New', Courier, monospace;
     --cinza0: rgba(128, 128, 128, 0.147);
-    --cinza1: rgba(128, 128, 128, 0.582);
+    --cinza1: rgba(128, 128, 128, 0.664);
     --cinza2: rgba(128, 128, 128);
     --verde0: rgba(239, 251, 251, 1);
     --verde1: rgba(196, 234, 234, 1);
@@ -240,7 +240,7 @@ main .novasessao {
     border-radius: 40px 0px 0px 40px;
     margin-left: 10px;
     max-width: 800px;
-    background-image: linear-gradient(to right, var(--cinza1), transparent);
+    background-image: linear-gradient(to right, var(--cinza1), lightgrey,transparent);
     text-align: justify;
     font-size: 20px;
 }
@@ -257,8 +257,8 @@ main .novasessao {
     list-style-position: inside;
     list-style-type: '\2714\00A0\00A0';
     /*emoji checkbox falha no mobile*/
-    font-size: 18px;
-    line-height: 1.2;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 #trajetoria-atual {
@@ -305,7 +305,7 @@ main .novasessao {
     margin: 10px;
     max-width: 600px;
     text-align: justify;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.1;
     transition-duration: 1s;
 }
@@ -488,15 +488,24 @@ main .novasessao {
     background-image: linear-gradient(to bottom right, var(--verde1), transparent);
 }
 
-.projetos-box:hover {
-    letter-spacing: 3px;
-    transition-duration: 1.1s;
-}
-
 .projetos-box h1 {
+    position: absolute;
+    max-width: 200px;
     text-align: center;
     font-size: normal;
 }
+
+.projetos-box h1 > a {
+    text-decoration: none;
+    color: black;
+}
+
+.projetos-box a:hover {
+    letter-spacing: 2px;
+    transition-duration: 1.1s;
+    color: var(--verde4);
+}
+
 
 /*BOTÃO INÍCIO*/
 #inicio-botao {
@@ -507,7 +516,7 @@ main .novasessao {
     width: 65px;
     margin-top: 250px;
     margin-right: 20px;
-    opacity: 30%;
+    opacity: 70%;
 }
 
 /*RODAPÉ*/
