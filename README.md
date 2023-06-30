@@ -1,2 +1,2 @@
 # projeto-curriculo
- Projeto principal (:
+Projeto autônomo de apresentação sendo desenvolvido com HTML, CSS e responsividade.
